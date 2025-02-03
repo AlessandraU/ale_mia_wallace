@@ -6,6 +6,12 @@
     <title>Alessandra's birthday</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <script>
+
+        window.onload = function() {
+          window.scrollTo(0, document.body.scrollHeight);
+        };
+
+
     function personalizeMessage() {
       const params = new URLSearchParams(window.location.search);
       const name = params.get("name"); // Ottieni il valore del parametro "name"
@@ -830,5 +836,7 @@ c-128 -65 -439 -99 -798 -90 -402 11 -761 73 -1161 202 -219 70 -254 80 -395
     <div class="bubble"></div>
     <div class="bubble"></div>
     <div class="bubble"></div>
+
+
 </body>
 </html>
