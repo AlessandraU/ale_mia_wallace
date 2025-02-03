@@ -9,52 +9,83 @@
     function personalizeMessage() {
       const params = new URLSearchParams(window.location.search);
       const name = params.get("name"); // Ottieni il valore del parametro "name"
-      let message = `I momenti speciali sono come bagagli preziosi, e le piccole gentilezze che condividiamo arricchiscono il nostro cammino.<br>
-                     Possa ciò che troverai qui accompagnarti verso orizzonti inesplorati e dolci destinazioni future, affinché tu possa sempre aggiungere nuove sfumature e ricchezze al tuo viaggio.`
+      let message;
       let title;
       switch (name) {
         case "Sebastian":
-          title = "<b>Sebastian</b>, Grazie per esserci.";
+          title = "<b>Sebastian</b> Grazie per esserci.";
+          message = `I momenti speciali sono come bagagli preziosi, e le piccole gentilezze che condividiamo arricchiscono il nostro cammino.<br>
+                     Possa ciò che troverai qui accompagnarti verso orizzonti inesplorati e dolci destinazioni future, affinché tu possa sempre aggiungere nuove sfumature e ricchezze al tuo viaggio.`;
           break;
         case "Roxana":
-          title = "<b>Roxana</b>, Grazie per esserci.";
+          title = "<b>Roxana</b> Grazie per esserci.";
+          message = `I momenti speciali sono come bagagli preziosi, e le piccole gentilezze che condividiamo arricchiscono il nostro cammino.<br>
+                     Possa ciò che troverai qui accompagnarti verso orizzonti inesplorati e dolci destinazioni future, affinché tu possa sempre aggiungere nuove sfumature e ricchezze al tuo viaggio.`;
           break;
         case "Massimiliano":
-          title = "<b>Massimiliano</b>, Grazie per esserci.";
+          title = "<b>Massimiliano</b> Grazie per esserci.";
+          message = `I momenti speciali sono come bagagli preziosi, e le piccole gentilezze che condividiamo arricchiscono il nostro cammino.<br>
+                     Possa ciò che troverai qui accompagnarti verso orizzonti inesplorati e dolci destinazioni future, affinché tu possa sempre aggiungere nuove sfumature e ricchezze al tuo viaggio.`;
           break;
         case "Pedro":
-          title = "<b>Pedro</b>, Grazie per esserci.";
+          title = "<b>Pedro</b> Grazie per esserci.";
+          message = `I momenti speciali sono come bagagli preziosi, e le piccole gentilezze che condividiamo arricchiscono il nostro cammino.<br>
+                     Possa ciò che troverai qui accompagnarti verso orizzonti inesplorati e dolci destinazioni future, affinché tu possa sempre aggiungere nuove sfumature e ricchezze al tuo viaggio.`;
           break;
           case "Leonardo":
-          title = "<b>Leonardo</b>, Grazie per esserci.";
+          title = "<b>Leonardo</b> Grazie per esserci.";
+          message = `I momenti speciali sono come bagagli preziosi, e le piccole gentilezze che condividiamo arricchiscono il nostro cammino.<br>
+                     Possa ciò che troverai qui accompagnarti verso orizzonti inesplorati e dolci destinazioni future, affinché tu possa sempre aggiungere nuove sfumature e ricchezze al tuo viaggio.`;
           break;
           case "Siria":
-          title = "<b>Siri</b>, Grazie per esserci.";
+          title = "<b>Siri</b> Grazie per esserci.";
+          message = `I momenti speciali sono come bagagli preziosi, e le piccole gentilezze che condividiamo arricchiscono il nostro cammino.<br>
+                     Possa ciò che troverai qui accompagnarti verso orizzonti inesplorati e dolci destinazioni future, affinché tu possa sempre aggiungere nuove sfumature e ricchezze al tuo viaggio.`;
           break;
           case "Madre":
-          title = "<b>Madre</b>, Grazie per esserci.";
+          title = "<b>Madre</b> Grazie per esserci.";
+          message = `I momenti speciali sono come bagagli preziosi, e le piccole gentilezze che condividiamo arricchiscono il nostro cammino.<br>
+                     Possa ciò che troverai qui accompagnarti verso orizzonti inesplorati e dolci destinazioni future, affinché tu possa sempre aggiungere nuove sfumature e ricchezze al tuo viaggio.`;
           break;
           case "Moreno":
-          title = "<b>Moreno</b>, Grazie per esserci.";
+          title = "<b>Moreno</b> Grazie per esserci.";
+          message = `I momenti speciali sono come bagagli preziosi, e le piccole gentilezze che condividiamo arricchiscono il nostro cammino.<br>
+                     Possa ciò che troverai qui accompagnarti verso orizzonti inesplorati e dolci destinazioni future, affinché tu possa sempre aggiungere nuove sfumature e ricchezze al tuo viaggio.`;
           break;
           case "Seba":
-          title = "<b>Seba_pro_49</b>, ti voglio bene.";
+          title = "<b>Seba_pro_49</b> ti voglio bene.";
+            message = "Un piccolo dolce pensiero per aver partecipato al mio trentesimo compleanno!";
           break;
           case "Fabrizio":
-          title = "<b>Fabrizio</b>, Grazie per esserci.";
+          title = "<b>Fabrizio</b> Grazie per esserci.";
+          message = `I momenti speciali sono come bagagli preziosi, e le piccole gentilezze che condividiamo arricchiscono il nostro cammino.<br>
+                     Possa ciò che troverai qui accompagnarti verso orizzonti inesplorati e dolci destinazioni future, affinché tu possa sempre aggiungere nuove sfumature e ricchezze al tuo viaggio.`;
           break;
           case "andrea":
-          title = "<b>Andrea</b>, Grazie per esserci.";
+          title = "<b>Andrea</b> Grazie per esserci.";
+          message = `I momenti speciali sono come bagagli preziosi, e le piccole gentilezze che condividiamo arricchiscono il nostro cammino.<br>
+                     Possa ciò che troverai qui accompagnarti verso orizzonti inesplorati e dolci destinazioni future, affinché tu possa sempre aggiungere nuove sfumature e ricchezze al tuo viaggio.`;
           break;
           case "Jaqueline":
-          title = "<b>Jaqueline</b>, Grazie per esserci.";
+          title = "<b>Jaqueline</b> Grazie per esserci.";
+          message = `I momenti speciali sono come bagagli preziosi, e le piccole gentilezze che condividiamo arricchiscono il nostro cammino.<br>
+                     Possa ciò che troverai qui accompagnarti verso orizzonti inesplorati e dolci destinazioni future, affinché tu possa sempre aggiungere nuove sfumature e ricchezze al tuo viaggio.`;
           break;
           case "Manuel":
-          title = "<b>Mankend</b>, Ti voglio bene.";
+          title = "<b>Mankend</b> Ti voglio bene.";
+          message = "Un piccolo dolce pensiero per aver partecipato al mio trentesimo compleanno!";
           break;
+          case "Carlo":
+          title = "<b>Carlo</b> Grazie per esserci.";
+          message = `I momenti speciali sono come bagagli preziosi, e le piccole gentilezze che condividiamo arricchiscono il nostro cammino.<br>
+             Possa ciò che troverai qui accompagnarti verso orizzonti inesplorati e dolci destinazioni future, affinché tu possa sempre aggiungere nuove sfumature e ricchezze al tuo viaggio.`;
+          break;
+       
        
         default:
           title = "Grazie per esserci!"; 
+          message = `I momenti speciali sono come bagagli preziosi, e le piccole gentilezze che condividiamo arricchiscono il nostro cammino.<br>
+                     Possa ciò che troverai qui accompagnarti verso orizzonti inesplorati e dolci destinazioni future, affinché tu possa sempre aggiungere nuove sfumature e ricchezze al tuo viaggio.`;
       }
       document.getElementById("title").innerHTML = title;
       document.getElementById("message").innerHTML = message;
