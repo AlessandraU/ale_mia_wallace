@@ -9,8 +9,7 @@
     function personalizeMessage() {
       const params = new URLSearchParams(window.location.search);
       const name = params.get("name"); // Ottieni il valore del parametro "name"
-      let message = `In questo viaggio che chiamiamo vita, ogni passo è un'opportunità per riflettere e scoprire nuove prospettive.<br>
-                     I momenti speciali sono come bagagli preziosi, e le piccole gentilezze che condividiamo arricchiscono il nostro cammino.<br>
+      let message = `I momenti speciali sono come bagagli preziosi, e le piccole gentilezze che condividiamo arricchiscono il nostro cammino.<br>
                      Possa ciò che troverai qui accompagnarti verso orizzonti inesplorati e dolci destinazioni future, affinché tu possa sempre aggiungere nuove sfumature e ricchezze al tuo viaggio.`
       let title;
       switch (name) {
@@ -78,10 +77,10 @@
         .content {
             text-align: center;
             background: rgba(255, 255, 255, 0.8); /* Sfondo bianco semi-trasparente */
-            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             animation: fadeIn 2s ease-in-out;
+            padding: 10px;
         }
 
         @keyframes fadeIn {
@@ -160,10 +159,10 @@
         }
 
         /* Rende il contenuto responsivo */
-        .content {
-            max-width: 100%; /* Impedisce che il contenuto si espanda oltre il dispositivo */
+        /* .content {
+            max-width: 100%; 
             box-sizing: border-box;
-        }
+        } */
 
         @media (max-width: 768px) {
             .svg-container {
