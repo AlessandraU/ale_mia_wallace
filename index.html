@@ -9,53 +9,59 @@
     function personalizeMessage() {
       const params = new URLSearchParams(window.location.search);
       const name = params.get("name"); // Ottieni il valore del parametro "name"
-
-      let message;
+      let message = `In questo viaggio che chiamiamo vita, ogni passo è un'opportunità per riflettere e scoprire nuove prospettive.<br>
+                     I momenti speciali sono come bagagli preziosi, e le piccole gentilezze che condividiamo arricchiscono il nostro cammino.<br>
+                     Possa ciò che troverai qui ti accompagnarti verso orizzonti inesplorati e dolci destinazioni future, affinché tu possa sempre aggiungere nuove sfumature e ricchezze al tuo viaggio.`
+      let title;
       switch (name) {
         case "seba":
-          message = "Grazie di cuore, Seba, per essere qui con noi!";
+          title = "<b>Sebastian</b>, Grazie per esserci.";
           break;
         case "roxy":
-          message = "Grazie di cuore, Roxy, per essere qui con noi!";
+          title = "<b>Roxana</b>, Grazie per esserci.";
           break;
         case "massi":
-          message = "Grazie di cuore, Massi, per essere qui con noi!";
+          title = "<b>Massimiliano</b>, Grazie per esserci.";
           break;
         case "pedro":
-          message = "Grazie di cuore, Pedro, per essere qui con noi!";
+          title = "<b>Pedro</b>, Grazie per esserci.";
           break;
           case "leo":
-          message = "Grazie di cuore, Leo, per essere qui con noi!";
+          title = "<b>Leonardo</b>, Grazie per esserci.";
           break;
           case "siri":
-          message = "Grazie di cuore, Siri, per essere qui con noi!";
+          title = "<b>Siri</b>, Grazie per esserci.";
           break;
           case "madre":
-          message = "Grazie di cuore, Madre, per essere qui con noi!";
+          title = "<b>Madre</b>, Grazie per esserci.";
           break;
           case "moreno":
-          message = "Grazie di cuore, Moreno, per essere qui con noi!";
+          title = "<b>Moreno</b>, Grazie per esserci.";
           break;
           case "sebastian":
-          message = "Grazie di cuore, Sebastian, per essere qui con noi!";
+          title = "<b>Seba_pro_49</b>, ti voglio bene.";
           break;
           case "fabrizio":
-          message = "Grazie di cuore, fFabrizio, per essere qui con noi!";
+          title = "<b>Fabrizio</b>, Grazie per esserci.";
           break;
           case "andrea":
-          message = "Grazie di cuore, Andrea, per essere qui con noi!";
+          title = "<b>Andrea</b>, Grazie per esserci.";
           break;
           case "jaqueline":
-          message = "Grazie di cuore, Jaqueline, per essere qui con noi!";
+          title = "<b>Jaqueline</b>, Grazie per esserci.";
           break;
-        // Aggiungi altri casi per gli altri invitati
+          case "manuel":
+          title = "<b>Mankend</b>, Ti voglio bene.";
+          break;
+       
         default:
-          message = "Grazie per essere qui con noi!"; // Messaggio di default
+          title = "Grazie per essere qui con noi!"; 
       }
-      document.getElementById("message").textContent = message;
+      document.getElementById("title").innerHTML = title;
+      document.getElementById("message").innerHTML = message;
     }
 
-      // Mostra il messaggio nella pagina
+   
     
       </script>
     <style>
@@ -598,8 +604,8 @@ c22 -169 105 -517 147 -614 10 -24 14 -46 10 -49 -5 -3 -52 40 -105 96 -65 68
             <!-- Colonna per il contenuto -->
             <div  class="col-12 col-md-4">
                 <div class="content">
-                    <h1 class="mb-4">30th birthday</h1>
-                    <p class="mb-5" id="message"></p>
+                    <h4 class="mb-4" id="title"></h4>
+                    <p class="mb-5" id="message" ></p>
                 </div>
             </div>
 
