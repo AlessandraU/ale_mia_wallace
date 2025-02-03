@@ -10,12 +10,6 @@
     <script>
 
 
-  window.onload = function() {
-    setTimeout(() => {
-      document.body.style.height = window.innerHeight + "px";
-      window.scrollTo(0, document.body.scrollHeight);
-    }, 100);
-  };
 
 
 
@@ -118,11 +112,7 @@
             overflow: hidden;
         }
 
-        body::after {
-            content: "";
-            display: block;
-            height: 100px; /* Aggiunge spazio extra in fondo */
-            }
+   
 
         .content {
             text-align: center;
